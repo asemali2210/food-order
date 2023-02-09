@@ -1,0 +1,55 @@
+.add__meal__container{
+    border-radius: 33px;
+    background: #F5EDE1;
+    filter: drop-shadow(27px 6px 6px rgba(0, 0, 0, 0.25));
+    .add__meal{
+        padding: 25px;
+        .close__add__meal{
+            background: red ;
+            border: none;
+            color: tomato;
+            font-size: 2em;
+            cursor: pointer;
+            z-index: 1000;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+        .wd__meal__card{
+            .card__1{
+                gap: 15px;
+                background-color: $wh;
+                padding: 25px;
+                border-radius: 25px;
+                .img__box {
+                    img{
+                        border-radius: 23px;
+                    }
+                }
+            }
+            .form__meal__item{
+                .item__label{
+                    font-weight: 500;
+                }
+                .item__input{
+                    border-radius: 8px;
+                    text-align: center;
+                    margin: 0 5px;
+                    border: 1px solid $yl;
+                    font-size: 18px ;
+                    &:focus{
+                        outline: 0;
+                        border-color: $org;
+                    }
+                }
+                .--fill-in-nvy-sq{
+                    margin-top: 20px;
+                }
+            }
+        }
+        
+    }
+    @media screen and (max-width: 992px) {
+        overflow-y: scroll;
+    }
+}

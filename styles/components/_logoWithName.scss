@@ -1,0 +1,14 @@
+.wd__logo-with-name{
+    h1.wd__navbar__name{
+        font-size: 1.5rem;
+        font-family: 'Poppins';
+        font-style: italic;
+        font-weight: 600;
+    }
+    @media (min-width: 993px) and (max-width: 1200px) {
+            .wd__navbar__name {
+                font-size: 1.3em;
+            }
+        
+    }
+}

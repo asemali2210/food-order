@@ -1,0 +1,76 @@
+.wd__cart{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .wd__cart-wrapper{
+        width: 500px;
+        height: 500px;
+        border-radius: 33px;
+        background: #F5EDE1;
+        filter: drop-shadow(27px 6px 6px rgba(0, 0, 0, 0.25));
+        overflow-y: hidden;
+        .wd__cart-container{
+            overflow-x: hidden;
+            overflow-y: scroll;
+            height: 100%;
+            padding: 32px;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            
+        }
+          /* Track */
+          
+        .wd__cart__header{
+            margin-bottom: 20px;
+            .wd__cart__header__p{
+                font-weight: 700;
+                font-size: 1.8em;
+            }
+            .wd__cart__header__close{
+                background: none ;
+                border: none;
+                color: tomato;
+                font-size: 2em;
+            }
+        }
+        .wd__cart__total{
+            .wd__cart__price-box-info{
+                padding: 5px 10px;
+                .p_1st-heading{
+                    font-size: 1.2em;
+                    color: $gry;
+                }
+                
+                .p_1st-price{
+                    font-size: 1.2em;
+                    font-weight: 900;
+                }
+            }
+            .wd__submit__meal{
+                margin : 20px 0;
+                button{
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .wd__cart__meal-on-cart{
+        .wd__cart__meal-container{
+            .wd__meal-on-cart__img{
+    
+            }
+            .wd__meal-on-cart__name{
+                font-weight: 700;
+                font-size: 1.2em;
+            }
+            .wd__meal-on-cart__price{
+                font-weight: 900;
+                font-size: 1em;
+            }
+        }
+    }
+}

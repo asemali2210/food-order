@@ -1,0 +1,102 @@
+.wd__home-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(304.58deg, #F4ECE1 57.1%, #FCFBF7 145.5%);
+    overflow: hidden;
+    .wd__home-header__content__left{
+        gap: 25px;
+        .wd__home-header__heading{
+            .img__box{
+                ._1st{
+                    color: $org;
+                    font-weight: 700;
+                    font-size: 1em;
+                }
+            }
+            .__2st{
+                margin-top: -18px;
+                position: relative;
+                .__3st{
+                    position: relative;
+                    .__3st__p{
+                        font-weight: 700;
+                        font-size: 2.4em;
+                        color: $bk;
+                        margin-left: 8px;
+                        line-height: 1;
+                    }
+                    .img__box{
+                        position: absolute;
+                        right: -0%;
+                        bottom: 50%;
+                        transform: rotate(-27deg);
+                    }
+                }
+            }
+            ._bold{
+                font-weight: 700;
+                font-size: 6.5em;
+                line-height: 1;
+                color: $org;
+            }
+        }
+        .wd__home-header__btns{
+            gap: 10px;
+                .play__icon{
+                    margin-right: 15px;
+                    width: 35px;
+                    height: 35px;
+                    padding: 9px;
+                    background-color: $wh;
+                    color: $bk;
+                    border-radius: 50%; 
+                }
+                .wd__btn.--fill-out{
+                    border: none;
+                    width: auto;
+                    &:hover{
+                        background: none;
+                        a{
+                            color: $bk !important;
+                        }
+                    }
+                }
+        }
+        .wd__home-header__rating{
+            gap: 5px;
+            ._1st{
+                font-size: 1em;
+                font-weight: 700;
+            }
+            ._2st{
+                color: $gry;
+                font-family: $poppins;
+            }
+
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        overflow: auto;
+        height: 100vh;
+
+        
+    }
+    @media screen and (max-width:1200px) {
+        padding: 0 10px 20px;
+        .wd__home-header__img{
+            padding: 50px;
+            > div {
+                position: unset !important;
+              }
+            img{
+                object-fit: contain;
+                width: 100% !important;
+                position: relative !important;
+                height: unset !important;
+            }
+        }
+        
+    }
+}

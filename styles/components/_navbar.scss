@@ -1,0 +1,133 @@
+@import './logoWithName';
+.wd__navbar{
+    position: relative;
+    padding: 20px 10px;
+    z-index: 999;
+    .wd__navbar__toggle-btn {
+            cursor: pointer;
+            padding: 15px;
+
+            .wd__navbar__toggle-icon {
+                font-size: 1.5em;
+            }
+
+            &.--active {
+                color: $org;
+            }
+        }
+    .wd__navbar__menu{        
+        .wd__navbar__items{
+            .wd__navbar__links{
+                .wd__navbar__item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .wd__navbar__link{
+                        display: block;
+                        font-weight: 500;
+                        font-size: 1.3em;
+                        transition: all .5s;
+                        &:hover{
+                            color: $gry !important;
+                        }
+                    }
+                    
+                    &.search-field{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 220px;
+                        align-self: center;
+                        input{
+                            box-shadow: 1px 10px 33px -13px rgba(0, 0, 0, 0.404);
+                            border-radius: 24px;
+                            border: 1px solid transparent;
+                            padding: 8px 40px 8px 40px;
+                            width: 100%;
+                            background: transparent;
+                            &:focus{
+                                outline: 0;
+                                border-color: $bk;
+                            }
+                            &::placeholder{
+                                font-size: 1.2em;
+                            }
+                        }
+                        .search-field__icon__cart{
+                            right: 20px;
+                            cursor: pointer;
+                            .num-of-item{
+                                position: absolute;
+                                top: -10px;
+                                right: -10px ;
+                                color: $wh;
+                                border-radius: 50%;
+                                width: 15px;
+                                height: 15px;
+                                padding: 5px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;     
+                                font-weight: 700;
+                                font-size: 10px;   
+                                background: #EC2633;
+                                box-shadow: 0px 1.65453px 19.0271px 0.827267px rgba(255, 51, 52, 0.72);                        
+                            }
+                        }
+                        .num-of-item{
+                            
+                        }
+                        .search-field__icon__search{
+                            left: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                    &.auth-btn {
+                        .wd__btn {
+                            a {
+                                font-size: 0.9em; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 993px) and (max-width: 1200px) {
+            .wd__navbar__menu {
+                .wd__navbar__items {
+                    .wd__navbar__links {
+                        .wd__navbar__item {
+                            .wd__navbar__link {
+                                font-size: 1.1em;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    @media screen and (max-width: 992px) {
+        .wd__navbar__menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: linear-gradient(304.58deg, #F4ECE1 57.1%, #FCFBF7 145.5%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                width: 100%;
+                padding:35px;
+                .wd__navbar__links {
+                    gap: 25px;
+
+                    .wd__navbar__item {
+                        .wd__navbar__link {
+                            font-size: .9rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+    }
+}

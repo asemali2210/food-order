@@ -1,0 +1,130 @@
+.wd__footer{
+    margin-top: 60px;
+    padding: 15px;
+    overflow: hidden;
+    .wd__footer-col__items{
+        font-size: 1.1em;
+        padding: 10px;
+        color: $nv-bl;
+        font-weight: 500;
+        .wd__footer-col__heading{
+            font-size: 1.4em;
+            color: $nv-bl;
+            font-weight: 700;
+        }
+        .p-col_2st{
+            font-size: 0.8em;
+            color: $gry;
+            margin-bottom: 10px;
+        }
+        .wd__footer__item{
+            margin: 10px 0;
+            .p_1st{
+                font-size: .9em;
+                color: $yl;
+                margin-bottom: 10px;
+            }
+            
+            .wd__social-icons {
+                margin-top: 20px;
+            }
+            .p_1st{
+                font-size: .9em;
+                color: $yl;
+                margin-bottom: 10px;
+            }
+            
+        }
+        .wd__footer-col__form{
+            margin: 20px 0;
+            .input-newsletter{
+                margin: 20px 0;
+                input{
+                    height: 35px;
+                    border: none;
+                    padding: 5px 8px;
+                    background: #dfdfdf;;
+                    color: $gry;
+                    width: 180px;
+                    &::placeholder{
+                        color: $gry;
+                        padding: 10px;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                .wd__btn{
+                    position: relative;
+                    margin-left: -10px;
+                    height: 100%;
+                    width: auto;
+                    height: 35px;
+                    font-size: .8em;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: $nv-bl;
+                        color: $wh;
+                    }
+                }
+            }
+            
+        }
+        .wd__footer__download-btns{
+            
+            .wd__footer-col__heading_download{
+                font-size: 1.5em;
+                color: $nv-bl;
+                font-weight: 900;
+            }
+            .p-col_4st{
+                margin: 20px 0;
+                font-size: 1em;
+                color: $yl;
+            }
+            .btns-box{
+                a{
+                    border: 1px solid $yl;
+                    font-weight: 700;
+                    font-size: 0.8em;
+                    color: $nv-bl;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin-right: 10px;
+                    white-space: nowrap;
+                    ._icon{
+                        font-size: 1.8em;
+                        color: $org;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+        
+    }
+    @media screen and (max-width: 768px) {
+        .wd__logo-with-name{
+            justify-content: center;
+        }
+        .wd__social-icons{
+            justify-content: center;
+        }
+        .wd__footer__download-btns{
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            ._left{
+                order: 1;
+            }
+            ._right{
+                order: 0;
+                flex-basis: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

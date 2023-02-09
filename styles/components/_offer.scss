@@ -1,0 +1,136 @@
+.wd__offer{
+    background-image: url('../../public/assest/img/wdOfferbg.png');
+    background-position: 170% 200px; 
+    background-repeat: no-repeat;
+    background-size: 750px 750px;
+    .wd__offer-header{
+        .wd__offer-header__wrapper{
+            background: #F5EDE1;
+            box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+            border-radius: 50px;
+            padding: 10px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .wd__offer-header__wrapper__bg{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('../../public/assest/img/offerImgs.png');
+            filter: blur(1px);
+            z-index: -1;
+            background-repeat: no-repeat;
+            background-position: 20px 0;
+        }
+        .wd__offer-header-heading{
+            padding: 50px 30px;
+            position: relative;
+            z-index: 100;
+            margin: 20px 0;
+            .__1st {
+                font-weight: 900;
+                font-size: 34.3529px;
+                margin: 20px 0;
+                color: $nv-bl;
+            }
+            .__2st{
+                font-size: 20.0392px;
+                color: $nv-bl;
+            }
+        }
+    }
+    .wd__offer-slider{
+        position: relative;
+        margin-top: 150px;
+        .wd__offer-slider-container__bg{
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+           width: 90%;
+            z-index: 1;
+            height: 100%;
+            background: linear-gradient(180deg, #FFF0EC 0%, #FFDDD4 100%);
+            border-radius: 0px 100px 24px  0px;
+
+        }
+            .slider-card{
+                position: relative;
+                flex-wrap: wrap;
+                z-index: 100;
+                .slider-card__img{
+                    position: relative;
+                    margin-top: -50px;
+                    flex-basis: 55%;
+                    
+                    overflow: hidden;
+                    border-radius: 100px 27px 27px 27px;
+                    
+                    img{
+                        border-radius: 100px 27px 27px 27px;
+
+                    }
+                }
+                .slider-card__slider-info{
+                    flex-basis: 40%;
+                    padding: 15px;
+                    gap: 15px;
+                    padding: 30px 30px 0 0;
+                    justify-content: space-between;
+                    h4.slider-card__slider-info__category{
+                        font-weight: 700;
+                        font-size: 1.4em;
+                        color: $org;
+                    }
+                    h3.slider-card__slider-info__heading{
+                        position: relative;
+                        font-weight: 700;
+                        font-size: 2.4em;
+        
+                    }
+                    p.slider-card__slider-info__body{
+                        font-weight: 400;
+                        font-size: 1.1em;
+                        color: $gry;
+                    }
+                    .slider-card__btns-controler{
+                        margin: 40px 0;
+                        .btns-controler_icon{
+                            font-size: 2.5em;
+                            margin: 0 20px;
+                            color: $gry;
+                        }
+                        .slider-card__counter{
+                            font-weight: 500;
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        
+    }
+    @media screen and (max-width: 768px) {
+        
+    .wd__offer-header__wrapper__bg{
+        background: none;
+        .wd__offer-header-heading{
+            padding: 30px 10px;
+        }
+    }
+    .slider-card{
+        .slider-card__img{
+            flex-basis: 100% !important;
+        }
+        .slider-card__slider-info{
+            flex-basis: 90% !important;
+        }
+    }
+        
+    }
+}

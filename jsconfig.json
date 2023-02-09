@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "components/*": ["component/*"],
+            "public/assest/img/*": ["img/*"],
+        }
+    }
+}

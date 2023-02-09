@@ -1,0 +1,26 @@
+@mixin WdButton(
+    $borderColor, 
+    $textColor ,
+    $bkColor,
+    $hoverBorderColor,
+    $hoverTextColor,
+    $hoverBGColor
+    ) {
+    color: $textColor;
+    border: 1px solid $borderColor;
+    background-color: $bkColor;
+    transition: all 0.3s;
+    a{
+        font-weight: 500;
+        font-size: 16px;
+        color: $textColor !important;
+    }    
+    &:hover{
+        color: $bkColor;
+        background-color: $hoverBGColor;
+        border-color: $hoverBorderColor;
+        a {
+            color: $hoverTextColor  !important;
+        }
+    }
+}
